@@ -1,10 +1,10 @@
 import streamlit as st
 
 # Set up page
-st.set_page_config(page_title="Cas d'Entreprise – Analyse Bancaire", layout="wide")
+st.set_page_config(page_title="Analyse Bancaire", layout="wide")
 
 # Title
-st.title("📊 Cas d'Entreprise – Analyse Bancaire")
+st.title("Analyse Bancaire")
 
 # --- Download section ---
 st.markdown("### 📥 Téléchargement des données")
@@ -19,7 +19,7 @@ with open("Data_Bankable.xlsx", "rb") as file:
 st.markdown("---")
 
 # --- Case selector ---
-st.markdown("### ❓ Choisissez un Business Case à explorer :")
+st.markdown("### Choisissez un Business Case à explorer :")
 selected_case = st.radio(
     label="",
     options=["Business Case 1 : Segmentation des clients", "Business Case 2 : Performance des agences et conseillers"],
@@ -36,7 +36,7 @@ if "Segmentation" in selected_case:
     Aider la banque à **segmenter ses clients** pour identifier les profils les plus rentables et proposer des offres adaptées.
 
     ### ❓ Problématique  
-    > *Quels profils de clients (secteur, forme juridique, taille, localisation) génèrent le plus d’épargne et de patrimoine tout en présentant un risque faible (peu de découvert) ?*
+    Quels profils de clients (secteur, forme juridique, taille, localisation) génèrent le plus d’épargne et de patrimoine tout en présentant un risque faible (peu de découvert) ?
 
     ### 🧩 Données à utiliser  
     - `CLIENT` : données financières et RH  
