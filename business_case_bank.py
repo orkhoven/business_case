@@ -59,11 +59,20 @@ if "Segmentation" in selected_case:
     - `CLIENT` → `SECTEUR_ACTIVITE` → `Libelle_Secteur_Activite`
     - `CLIENT` → `ADRESSE` → `DEPARTEMENT` → `PAYS`
 
-    **2. Indicateurs à créer :**
-    - Ancienneté (années)
-    - Taux d’épargne = Montant_Epargne / Montant_Total_Compte
-    - Taux de découvert = Montant_Decouvert / Montant_Compte_Courant
-    - Rentabilité estimée = Montant_Patrimoine + Montant_Total_Compte - Montant_Decouvert
+    **2. Indicateurs à créer (avec explication) :**
+
+    - **Ancienneté du client**  
+    > Calculée à partir de la `Date_Ouverture_1er_Compte`, cette mesure permet d’estimer la fidélité et la valeur à long terme d’un client.
+
+    - **Taux d’épargne** = Montant_Epargne / Montant_Total_Compte  
+    > Indique si le client place une part importante de son argent sur des produits d’épargne, ce qui est généralement un bon indicateur de stabilité financière.
+
+-   **Taux de découvert** = Montant_Decouvert / Montant_Compte_Courant  
+    > Permet de mesurer la part d’endettement à court terme ou les besoins en trésorerie. Un taux élevé peut signaler un risque ou une mauvaise gestion.
+
+-   **Rentabilité estimée du client** = Montant_Patrimoine + Montant_Total_Compte - Montant_Decouvert  
+    > C’est une estimation simple du potentiel économique du client pour la banque, en tenant compte de ses actifs nets.
+
 
     **3. Analyses à produire :**
     - Rentabilité moyenne par secteur, type client, taille (0–10, 11–50, 51–250, >250)
@@ -72,7 +81,7 @@ if "Segmentation" in selected_case:
 
     **4. Synthèse :**
     - Quels segments viser ?
-    - Quel est le profil du client « premium » ?
+  - Quel est le profil du client « premium » ?
 
     ### 📈 Tâche finale Power BI  
     Créez un dashboard avec :
