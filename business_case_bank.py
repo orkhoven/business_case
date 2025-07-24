@@ -134,7 +134,7 @@ if selected_case:
         - Rentabilité moyenne par agence
 
         **4. Questions de synthèse :**
-        - Où renforcer les effectifs ?
+        - Sur la base de la performance et du nombre de clients, où faudrait-il envisager un renforcement des effectifs ?
         - Répartition équitable des clients ?
 
         ### 📈 Tâche finale Power BI  
